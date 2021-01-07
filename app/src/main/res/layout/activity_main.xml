@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_bar"
+        android:background="#387ef5"
+        tools:ignore="NewApi" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool_bar_text_view"
+            android:text="设备"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            />
+    </Toolbar>
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        app:menu="@menu/bn_menu"
+        style="@style/Widget.Design.BottomNavigationView"
+        android:background="#fff"
+        app:itemTextColor="#000"
+        app:itemIconTint="@color/selector_color"
+        app:elevation="16dp"
+        android:layout_gravity="bottom"
+        android:layout_height="55dp"/>
+
+</LinearLayout>
